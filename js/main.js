@@ -79,7 +79,8 @@ class ShapeOverlays {
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
-
+  const currentLink = document.querySelector('#current_link');
+    
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
       return false;
@@ -105,4 +106,7 @@ class ShapeOverlays {
           }
     }
   });
+    currentLink.addEventListener('click', () => {
+        elmHamburger.click();
+    });
 }());

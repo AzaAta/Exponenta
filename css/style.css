@@ -433,7 +433,7 @@ a:focus {
     height: 100vh;
 }
 
-h1, h2{
+h1, h2, h3, h4{
     font-family: 'Arkhip';
 }
 
@@ -442,7 +442,7 @@ h1, h2{
 }
 
 .logo{
-    animation: hover 5s infinite;
+    animation: hover 3s infinite;
     animation-timing-function: ease-in-out;
   }
 
@@ -461,6 +461,11 @@ h1, h2{
   0%{transform: scale(1);}
   50%{transform: scale(.8);}
   100%{transform: scale(1);}
+}
+
+.btn, .btn-large {
+    z-index: 0;
+    margin-bottom: 30px;
 }
 
 .block{
