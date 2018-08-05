@@ -2,7 +2,7 @@ class ShapeOverlays {
   constructor(elm) {
     this.elm = elm;
     this.path = elm.querySelectorAll('path');
-    this.numPoints = 5;
+    this.numPoints = 10;
     this.duration = 900;
     this.delayPointsArray = [];
     this.delayPointsMax = 300;
@@ -79,8 +79,7 @@ class ShapeOverlays {
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
-  const currentLink = document.querySelector('#current_link');
-    
+
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
       return false;
@@ -106,7 +105,4 @@ class ShapeOverlays {
           }
     }
   });
-    currentLink.addEventListener('click', () => {
-        elmHamburger.click();
-    });
 }());

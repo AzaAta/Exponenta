@@ -1,3 +1,4 @@
+@charset "utf-8";
 *,
 *::after,
 *::before {
@@ -10,7 +11,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Raleway", consolas, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #57585c;
 	color: var(--color-text);	
 	background-color: #fff;
@@ -24,21 +25,20 @@ body{
 	
     
 	--color-text: #120047;
-	--color-bg: #dbbff6;
 	--color-link: #110046;
-	--color-link-hover: #e83779;
-	--color-info: #ffffff;
+	--color-link-hover: rgb(180, 169, 227);
+	--color-info: #fff;
 	--color-main-bg: #7115d8;
 	--path-fill-1: url(#gradient1);
 	--path-fill-2: url(#gradient2);
 	--path-fill-3: url(#gradient3);
 	--font-family-title: 'Arkhip', serif;
 	--color-menu: #ffffff;
-	--color-menu-hover: #e83779;
+	--color-menu-hover: rgb(104, 91, 164);
 	--font-family-menu: var(--font-family-title);
 	--font-size-menu: 3.5vmax;
 	--font-weight-menu: 400;
-	--button-line: #e83779;
+	--button-line: rgb(104, 91, 164);
 }
 a {
 	text-decoration: none;
@@ -51,6 +51,7 @@ a:hover,
 a:focus {
 	color: #423c2b;
 	color: var(--color-link-hover);
+    stroke: #fff;
 	outline: none;
 }
 
@@ -427,47 +428,78 @@ a:focus {
 
 }
 
+.logo
+{
+    cursor: pointer;
+    position: fixed;
+    top: .55em;
+	left: 1.4em;
+	font-family : Consolas;
+	font-weight : bold;
+	font-size : 48px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
+}
 
-/*Banner*/
-.banner{
+
+#banner   {
     height: 100vh;
+    background: url(../images/banner.png);
+    background-position: bottom;
+    background-size: cover;
 }
 
-h1, h2, h3, h4{
-    font-family: 'Arkhip';
+@font-face {
+    font-family: ArkhipRegular;
+    src: url(../fonts/Arkhip_font.ttf);
 }
 
-.banner h1{
-    margin-left: -4.5px;
+	.st14{
+	font-family : ArkhipRegular;
+	font-size : 21px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
 }
 
-.logo{
-    animation: hover 3s infinite;
-    animation-timing-function: ease-in-out;
-  }
-
-.hide-on-med-and-up {
-    margin-bottom: -50vh
+.st13{
+	font-family : ArkhipRegular;
+	font-size : 60px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
 }
 
-
-@keyframes hover{
-  0%{transform: translateY(0%);}
-  50%{transform: translateY(-5%);}
-  100%{transform: translateY(0%);}
+.left{
+	font-family : ArkhipRegular;
+	font-size : 24px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
+    transform: rotate(-90deg);
 }
 
-@keyframes scale{
-  0%{transform: scale(1);}
-  50%{transform: scale(.8);}
-  100%{transform: scale(1);}
+.st7{
+	font-family : ArkhipRegular;
+	font-size : 24px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
 }
 
-.btn, .btn-large {
-    z-index: 0;
-    margin-bottom: 30px;
+.st4{
+	font-family : Consolas;
+	font-size : 36px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
 }
 
-.block{
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5);
+.st2{
+	font-family : Consolas;
+	font-size : 36px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+
+.st1{
+	font-family : Consolas;
+	font-size : 36px;
+	color : #685BA4;
+	color : rgb(104, 91, 164);
 }
