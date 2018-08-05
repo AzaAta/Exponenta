@@ -6,18 +6,18 @@
 }
 
 @font-face {
-    font-family: 'Arkhip';
-    src: url('../fonts/Arkhip_font.ttf');
+    font-family: ;
 }
 
 body {
-	font-family: "Raleway", consolas, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Consolas, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #57585c;
 	color: var(--color-text);	
 	background-color: #fff;
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    height: 11000px;
 }
 
 body{
@@ -32,7 +32,7 @@ body{
 	--path-fill-1: url(#gradient1);
 	--path-fill-2: url(#gradient2);
 	--path-fill-3: url(#gradient3);
-	--font-family-title: 'Arkhip', serif;
+	--font-family-title: ArkhipRegular, serif;
 	--color-menu: #ffffff;
 	--color-menu-hover: rgb(104, 91, 164);
 	--font-family-menu: var(--font-family-title);
@@ -439,6 +439,13 @@ a:focus {
 	font-size : 48px;
 	color : #685BA4;
 	color : rgb(104, 91, 164);
+}
+
+@media screen and (max-width: 601px) {
+    .logo {
+        left: 1em;
+        font-size: 30px;
+    }
 }
 
 
